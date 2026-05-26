@@ -40,6 +40,10 @@ export function SetupPage() {
         <li>
           Migrations: see <code className="rounded bg-stone-200 px-1">supabase/README.md</code> in the repo.
         </li>
+        <li>
+          If deploy fails on missing <code className="rounded bg-stone-200 px-1">dist</code>, see{' '}
+          <code className="rounded bg-stone-200 px-1">docs/vercel.md</code> (Root Directory and Output Directory).
+        </li>
       </ol>
     </main>
   )
