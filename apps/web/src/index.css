@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cherry-50: #fef2f2;
+  --color-cherry-100: #fee2e2;
+  --color-cherry-500: #ef4444;
+  --color-cherry-600: #dc2626;
+  --color-cherry-700: #b91c1c;
+  --color-cherry-800: #991b1b;
+}
+
+body {
+  @apply min-h-screen bg-stone-50 text-stone-900 antialiased;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+  /* Let “Save as PDF” honor invoice theme colors and background image (Chrome default is economy). */
+  .estimate-print-shell,
+  .estimate-print-shell * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

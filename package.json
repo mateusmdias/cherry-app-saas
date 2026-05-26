@@ -1,0 +1,15 @@
+{
+  "name": "cherry-app-saas",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w web",
+    "build": "npm run build -w web",
+    "lint": "npm run lint -w web",
+    "typecheck": "npm run typecheck -w web",
+    "db:push": "npx supabase db push",
+    "db:link": "npx supabase link"
+  }
+}
