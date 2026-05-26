@@ -10,6 +10,7 @@ This repo is an npm workspace. The Vite app lives under `apps/web` and builds to
 
 Root `vercel.json` uses:
 
+- `framework`: `null` (Vercel “Other” preset — avoids the Vite preset forcing a root `dist/` layout)
 - `installCommand`: `npm install`
 - `buildCommand`: `npm run build -w web`
 - `outputDirectory`: `apps/web/dist`
