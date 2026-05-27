@@ -11,6 +11,7 @@ This folder stores discovery artifacts, stakeholder Q&A, and product specs for t
 | [prd/mvp-v1.md](prd/mvp-v1.md) | MVP product requirements derived from discovery |
 | [implementation-plan.md](implementation-plan.md) | Phased build plan (GitHub, Supabase, Vercel) |
 | [technical-constraints.md](technical-constraints.md) | Stack and implementation constraints agreed for the project |
+| [../macos/README.md](../macos/README.md) | Mac: double-click launcher (`Run-Cherry-Local.command`) for local dev with hosted Supabase |
 
 ## How to use stakeholder discovery
 

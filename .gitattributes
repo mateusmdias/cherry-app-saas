@@ -1,0 +1,2 @@
+# Shell / launcher scripts must use LF so macOS can execute them after clone
+*.command text eol=lf
