@@ -1,5 +1,7 @@
 # Run Cherry locally on a Mac (double‑click)
 
+**Got a ZIP from someone?** Open **`START-HERE-MAC.txt`** at the top of the unzipped folder first (paths and `~/.cherry-app-root`).
+
 You can’t fit Node, Git, and the whole app into a single “magic” file. This folder gives you a **launcher** you can put in **Applications** (or the Dock): it opens Terminal, checks your setup, runs `npm install`, then `npm run dev`.
 
 ## One-time setup (she does this once)

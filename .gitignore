@@ -10,3 +10,6 @@ dist
 .cursor
 supabase/.branches
 supabase/.temp
+
+# Local Mac handoff ZIP (generated; do not commit)
+cherry-app-saas-mac-handoff*.zip

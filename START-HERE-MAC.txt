@@ -1,0 +1,65 @@
+================================================================================
+  CHERRY — Mac handoff (folder from ZIP)
+================================================================================
+
+This ZIP is a snapshot of the app source code. It does NOT include Node.js or
+your secrets file — she installs Node once, then follows the steps below.
+
+--------------------------------------------------------------------------------
+  ONE-TIME ON THE MAC
+--------------------------------------------------------------------------------
+
+1) Install Node.js (LTS) from https://nodejs.org/
+
+2) Unzip this archive anywhere (Desktop is fine). Remember the full path to
+   the folder that CONTAINS this file and "package.json" — call it YOUR_FOLDER.
+
+3) Tell the launcher where the code lives (default is ~/cherry-app-saas only
+   if you put the project there). In Terminal:
+
+     echo "YOUR_FOLDER" > ~/.cherry-app-root
+
+   Example if you unzipped on the Desktop:
+
+     echo "/Users/hername/Desktop/cherry-app-saas" > ~/.cherry-app-root
+
+   (No quotes in the file; one line only; use the real path.)
+
+4) Supabase keys — in Terminal:
+
+     cd YOUR_FOLDER
+     cp .env.example apps/web/.env.local
+
+   Open apps/web/.env.local in TextEdit or Cursor and set:
+     VITE_SUPABASE_URL
+     VITE_SUPABASE_ANON_KEY
+   (From Supabase → Project → Settings → API)
+
+5) Apply database migrations to that Supabase project once — see:
+     supabase/README.md
+
+--------------------------------------------------------------------------------
+  EVERY TIME SHE RUNS THE APP
+--------------------------------------------------------------------------------
+
+Option A — Double-click launcher (after one-time setup in macos/README.md):
+  • Copy macos/Run-Cherry-Local.command to Applications
+  • chmod +x "/Applications/Run-Cherry-Local.command"
+  • Double-click it → Terminal opens → browser: URL shown (localhost:…)
+
+Option B — Terminal only:
+
+     cd YOUR_FOLDER
+     npm install
+     npm run dev
+
+  Then open the http://localhost:… URL in Safari or Chrome.
+
+--------------------------------------------------------------------------------
+  HELP
+--------------------------------------------------------------------------------
+
+  macos/README.md     — Applications / Gatekeeper / launcher details
+  docs/vercel.md      — only if you deploy to Vercel later
+
+================================================================================
